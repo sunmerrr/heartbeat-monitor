@@ -6,14 +6,14 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/frontend/dist/$1"
+      "destination": "/frontend/$1"
     }
   ],
   "builds": [
     {
-      "src": "frontend/index.html",
+      "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/dist" }
+      "config": { "outputDirectory": "dist" }
     },
     {
       "src": "backend/server.js",
