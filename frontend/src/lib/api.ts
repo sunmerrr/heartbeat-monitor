@@ -1,7 +1,7 @@
 import ky from 'ky';
 
 export const api = ky.create({
-  prefixUrl: 'http://localhost:4000/api',
+  prefixUrl: 'http://192.168.0.115:50001/api',
   retry: 0
 });
 
